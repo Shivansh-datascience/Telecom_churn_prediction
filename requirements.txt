@@ -1,0 +1,12 @@
+Flask
+pymongo
+pymysql
+mysql
+sqlalchemy
+numpy
+secure-smtplib == 0.1.1
+dotenv
+tensorflow
+Keras
+joblib
+scikit-learn
