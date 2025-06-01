@@ -30,3 +30,32 @@ This project is a Flask-based REST API for predicting customer churn risk and ch
 ```bash
 git clone https://github.com/yourusername/churn-prediction-api.git
 cd churn-prediction-api
+
+
+Build Docker Image
+Make sure Docker Desktop is running.
+
+bash
+Copy code
+docker build -t shivanshbajpai/churnapi:latest .
+Run Docker Container Locally
+bash
+Copy code
+docker run -p 8000:8000 shivanshbajpai/churnapi:latest
+Now, open your browser or API client and visit:
+
+arduino
+Copy code
+http://localhost:8000
+Push Docker Image to Docker Hub
+Make sure you’re logged in:
+
+bash
+Copy code
+docker login
+Push the image:
+
+bash
+Copy code
+docker push shivanshbajpai/churnapi:latest
+
