@@ -1,7 +1,4 @@
-Got it! Here's your clean and complete README.md without Docker, structured for a Flask-based REST API that uses ANN and Random Forest models for customer churn prediction, and stores data in MongoDB:
 
-
----
 
 # 📊 Churn Prediction API
 
@@ -14,7 +11,7 @@ This is a **Flask-based REST API** that predicts customer churn using pre-traine
 - ✅ Predict **Churn Risk**: Classification (`0 = No Churn`, `1 = Churn`)
 - ✅ Predict **Churn Probability Score**: Float between `0.0` to `1.0`
 - ✅ Store prediction inputs and outputs in **MongoDB**
-- ✅ Test easily using **Postman**, **curl**, or any REST client
+- ✅ Test easily using **Postman**
 - ✅ Load models using **TensorFlow/Keras** and **Joblib**
 
 ---
@@ -106,9 +103,6 @@ Response JSON:
 
 All API requests and prediction results are stored in a MongoDB collection named (e.g., churn_predictions).
 
-Useful for auditing, analytics, or model retraining.
-
-
 
 ---
 
@@ -148,21 +142,4 @@ curl -X POST http://localhost:8000/predict_proba \
 
 Shivansh Bajpai
 📧 shivanshb884@gmail.com
-🔗 LinkedIn (Update this link)
-
-
----
-
-📄 License
-
-This project is open-source under the MIT License.
-
----
-
-Let me know if you'd like to include:
-- Sample input JSON
-- A `.env` file for MongoDB credentials
-- Swagger/OpenAPI integration
-
-I can also generate a `requirements.txt` or help with the actual code structure.
 
