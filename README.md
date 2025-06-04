@@ -44,12 +44,12 @@ This is a **Flask-based REST API** that predicts customer churn using pre-traine
 
 ### 1. Clone the Repository
 
-git clone https://github.com/yourusername/churn-prediction-api.git
-cd churn-prediction-api
+git clone https://github.com/Shivansh-datascience/Telecom_churn_prediction
+cd Telecom_churn_prediction
 
 2. Install Required Packages
 
-Ensure Python 3.8+ is installed.
+Ensure Python 3.12 is installed.
 
 pip install -r requirements.txt
 
@@ -58,7 +58,7 @@ pip install -r requirements.txt
 Ensure MongoDB is running locally or remotely and accessible via the connection string provided in the code (mongodb://localhost:27017/ by default).
 
 
----
+
 
 🌐 API Endpoints
 
@@ -104,7 +104,7 @@ Response JSON:
 All API requests and prediction results are stored in a MongoDB collection named (e.g., churn_predictions).
 
 
----
+
 
 📁 Project Structure
 
@@ -119,24 +119,6 @@ churn-prediction-api/
 │   └── preprocess.py            # Feature preprocessing helpers (optional)
 
 
----
-
-📬 Example Usage (via curl or Postman)
-
-Classification
-
-curl -X POST http://localhost:8000/predict \
--H "Content-Type: application/json" \
--d '{"feature1": 0.5, "feature2": 3.2, ...}'
-
-Probability
-
-curl -X POST http://localhost:8000/predict_proba \
--H "Content-Type: application/json" \
--d '{"feature1": 0.5, "feature2": 3.2, ...}'
-
-
----
 
 👨‍💻 Author
 
